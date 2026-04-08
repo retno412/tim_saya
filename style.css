@@ -1,0 +1,193 @@
+/* style.css - gaya bersama untuk semua halaman */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #1e3c5c, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+nav {
+    background-color: #0f172a;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.8rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    transition: background 0.3s;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: #2563eb;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    min-height: 60vh;
+}
+
+h2 {
+    color: #1e3c5c;
+    margin-bottom: 1rem;
+    border-left: 5px solid #2563eb;
+    padding-left: 1rem;
+}
+
+/* Halaman tugas */
+.task-list {
+    list-style: none;
+    background: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.task-list li {
+    padding: 0.8rem;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 1rem;
+}
+
+/* Halaman pengumuman */
+.announcement {
+    background: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-left: 4px solid #facc15;
+}
+
+.announcement h3 {
+    color: #0f2b40;
+    margin-bottom: 0.3rem;
+}
+
+.announcement small {
+    color: #64748b;
+    font-size: 0.8rem;
+}
+
+/* Tabel presensi */
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.attendance-table th, .attendance-table td {
+    padding: 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.attendance-table th {
+    background-color: #1e3c5c;
+    color: white;
+}
+
+.attendance-table tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Galeri */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.gallery-item {
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.gallery-item p {
+    padding: 0.8rem;
+    font-weight: 500;
+}
+
+/* Hero section di index */
+.hero {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.hero h2 {
+    border-left: none;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+    nav a {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
